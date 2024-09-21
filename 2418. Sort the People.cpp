@@ -9,7 +9,7 @@ public:
             m[heights[i]] = names[i];
         }
         sort(heights.rbegin(), heights.rend());
-        for(int i=0; i<n; i++){
+        for(int j=0; j<n; j++){
             names[i] = m[heights[i]];
         }
         return names;
