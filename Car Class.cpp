@@ -33,10 +33,10 @@ public:
 
 int main() {
     int noOfGear, maxSpeed;
-    string color;
-    cin >> noOfGear >> color >> maxSpeed;
+    string colour;
+    cin >> noOfGear >> colour >> maxSpeed;
 
-    RaceCar raceCar(noOfGear, color, maxSpeed);
+    RaceCar raceCar(noOfGear, colour, maxSpeed);
     raceCar.printRaceCarInfo();
 
     return 0;
