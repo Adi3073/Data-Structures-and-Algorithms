@@ -4,7 +4,7 @@
 
 string stringSum(string &num1, string &num2) {
     int carry = 0;
-    string result = "";
+    string res = "";
     int i = num1.size() - 1;
     int j = num2.size() - 1;
 
@@ -14,10 +14,10 @@ string stringSum(string &num1, string &num2) {
         int sum = digit1 + digit2 + carry;
         carry = sum / 10;
         sum %= 10;
-        result = to_string(sum) + result;
+        res = to_string(sum) + res;
         i--;
         j--;
     }
 
-    return result;
+    return res;
 }
